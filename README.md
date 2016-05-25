@@ -1,6 +1,7 @@
-<<<<<<< HEAD
-µjava±±à³ÌË¼Ïë Ô´Âë¼°Ïà¹ØÁ·Ï°
+Think in javaæºç åŠç›¸å…³ç»ƒä¹ 
 =======
 # TIJ4Code
 TIJ source code and practce
->>>>>>> e146c960b093700fcfe42add094ad64e99c345da
+
+    
+
