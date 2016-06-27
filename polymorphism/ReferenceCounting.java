@@ -32,16 +32,24 @@ class Composing {
     shared.dispose();
   }
   public String toString() { return "Composing " + id; }
+  protected void finalize(){
+	  System.out.println("Composing finalize" + id);
+  }
 }
 
 public class ReferenceCounting {
   public static void main(String[] args) {
     Shared shared = new Shared();
-    Composing[] composing = { new Composing(shared),
-      new Composing(shared), new Composing(shared),
-      new Composing(shared), new Composing(shared) };
+    Composing[] composing = new Composing[100];
+    for(int i = 0 ; i < 100 ; i++){
+    	composing[i] = new Composing(shared);
+    }
+//    Composing[] composing = { new Composing(shared),
+//      new Composing(shared), new Composing(shared),
+//      new Composing(shared), new Composing(shared) };
     for(Composing c : composing)
       c.dispose();
+    System.gc();
   }
 } /* Output:
 Creating Shared 0
