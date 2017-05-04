@@ -7,7 +7,7 @@ public class Gerbill {
 	public int id;
 	public static int gerbillNumber;
 
-	Gerbill(){
+	public Gerbill(){
 		gerbillNumber = gerbillNumber + 1;
 		id = gerbillNumber;
 	}
