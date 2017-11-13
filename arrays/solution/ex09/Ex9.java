@@ -1,7 +1,6 @@
 package arrays.solution.ex09;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Ex9 {

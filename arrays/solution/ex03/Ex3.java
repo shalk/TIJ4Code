@@ -1,6 +1,5 @@
 package arrays.solution.ex03;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Ex3 {

@@ -5,7 +5,8 @@ package arrays.solution.ex08; /* Added by Eclipse.py */
 class ArrayOfGenericType<T> {
   T[] array; // OK
 //  @SuppressWarnings("unchecked")
-  public ArrayOfGenericType(int size) {
+  @SuppressWarnings("unchecked")
+public ArrayOfGenericType(int size) {
     //! array = new T[size]; // Illegal
     array = (T[])new Object[size]; // "unchecked" Warning
   }

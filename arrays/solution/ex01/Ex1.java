@@ -1,7 +1,6 @@
 package arrays.solution.ex01;
 
-import java.util.*;
-import static net.mindview.util.Print.*;
+import java.util.Arrays;
 
 class Apple {
 	private static int count  = 0;
@@ -34,6 +33,7 @@ public class Ex1 {
 		Apple[] c;
 		c = new Apple[]{new Apple(), new Apple()};
 
+		@SuppressWarnings("unused")
 		Apple[] d;
 		// Error aggregate initialization can only be used in declare
 //		d = {new Apple(), new Apple()};
